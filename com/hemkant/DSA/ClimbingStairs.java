@@ -1,4 +1,4 @@
-package come.hemkant.DSA;
+package com.hemkant.DSA;
 
 public class ClimbingStairs {
 
