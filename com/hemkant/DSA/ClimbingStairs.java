@@ -2,18 +2,17 @@ package com.hemkant.DSA;
 
 public class ClimbingStairs {
 
-    public static void main(String args[])
+    public static void main(String[] args)
     {
-
-        System.out.println("Number of ways = " + findSteps(2));
+        System.out.println("Number of ways = " + findSteps(5));
     }
 
-    private static int findSteps(int steps)
+    static int findSteps(int numberOfStairs)
     {
-        int temp=0;
+        int temp;
 
         int num1 =1, num2=1;
-        for (int i=0;i<(steps-1);i++)
+        for (int i=0;i<(numberOfStairs-1);i++)
         {
             temp=num1;
             num1=num1+num2;
