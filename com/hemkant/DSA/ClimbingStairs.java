@@ -5,7 +5,7 @@ public class ClimbingStairs {
     public static void main(String args[])
     {
 
-        System.out.println("Number of ways = " + findSteps(6));
+        System.out.println("Number of ways = " + findSteps(2));
     }
 
     private static int findSteps(int steps)
