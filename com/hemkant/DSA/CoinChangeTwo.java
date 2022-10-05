@@ -10,7 +10,7 @@ public class CoinChangeTwo {
 
             for (int j = 0; j < numberOfWays.length; j++) {
                 if (coins[i] <= j) {
-                    numberOfWays[j] += numberOfWays[(int)(j - coins[i])];
+                    numberOfWays[j] += numberOfWays[j - coins[i]];
                 }
             }
         }
