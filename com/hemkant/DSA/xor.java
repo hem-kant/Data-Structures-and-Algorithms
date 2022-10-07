@@ -5,6 +5,13 @@ import java.util.List;
 
 public class xor {
 // HackerRank
+//Given two strings consisting of digits 0 and 1 only, find the XOR of the two strings.
+//To know more about XOR https://en.wikipedia.org/wiki/Exclusive_or
+//Sample Input
+//10101
+//00101
+//Sample Output
+//10000
 
 
     static String stringsXOR(String s, String t)
