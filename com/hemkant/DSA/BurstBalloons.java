@@ -13,15 +13,17 @@ public class BurstBalloons {
 //
 //    Input: nums = [1,5]
 //    Output: 10
-
+//  CODE is IN PROGRESS
     static int burstBalloons(List<Integer> nums)
     {
         int resp=0;
         int temp=0;
         for (int i =0;i< nums.size();i++)
         {
+                int x;
+                 x= i==0?1:nums.get(i-1);
 
-                int x= i==0?1:nums.get(i-1);
+                 x= i>0 && i < nums.size() ?nums.get(i+1):0;
                 int y=nums.get(i);
                 int z = i+1 == nums.size()? 1:nums.get(i + 1);
                 System.out.println(z);
@@ -34,8 +36,8 @@ public class BurstBalloons {
     }
     public  static void main(String[] args) {
         List<Integer> nums = new ArrayList<>();
-        nums.add(1);
         nums.add(5);
+        nums.add(10);
 
         System.out.println(burstBalloons(nums));
 
